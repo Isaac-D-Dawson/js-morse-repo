@@ -1,5 +1,4 @@
-PLANS FOR MORE TRANSLATIONS FUNCTION
-
+COMPLETED:
 -Function will take a string input.
 -String will be broken down into an array of single chars.
 -each individual char will be lowercased.
@@ -9,11 +8,21 @@ PLANS FOR MORE TRANSLATIONS FUNCTION
 -array of morse char replacements will then be joined as a string.
 -Final string will be returned.
 
-EXTENSION:
 -Create DOM-facing file that handles user interaction with function.
+
+PLANS FOR MORSE TRANSLATIONS FUNCTION
+
+-Reverse translator time!
+-Create an "intertObj" function that flips key/value pairs for an object.
+--This will create our reverse translation object.
+-Use existing trsnalte function with the reversed array as it's input.
+--Create a initial value wrapper function for exactly this purpose.
+
+EXTENSION:
+
+-Add additional checks for valid numbers and punctuation.
 
 FURTHER PLANS:
 
--Add additional checks for valid numbers and punctuation.
 
 -Add easter Eggs ("The Angels have the Phonebox" script).
