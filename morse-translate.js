@@ -1,3 +1,4 @@
+import { join } from "path";
 
 export const morseObject = {
     "a" : "*-",     "b" : "-***",   "c" : "-*-*",
@@ -20,10 +21,23 @@ export const morseObject = {
  * @param {Object} morseObj 
  * @returns String
  */
-export const translateToMorse = (engString, morseObj=morseObject) => {
-    const lowerArr = engString.split("").map((char) => char.toLowerCase());
+export const translateToMorse = (engString, morseObj=morseObject, filter="", joiner=" ") => {
+    const lowerArr = engString.split(filter).map((char) => char.toLowerCase());
     const mappedArr = lowerArr.map((char) => morseObj[char] ?? "");
     const cleanArr = mappedArr.filter((item) => item !== "");
-    return cleanArr.join(" ")
+    return cleanArr.join(joiner)
 }
 
+const reverseObj = (revObj) => {
+    const results = {};
+    [...Object.keys(revObj)].forEach((key) => {
+        results[revObj[key]] = key;
+    });
+    return results;
+}
+
+export const fromMorseObject = reverseObj(morseObject);
+
+export const translateFromMorse = (morseStr) => {
+    return translateToMorse(morseStr, fromMorseObject, " ", "");
+}
