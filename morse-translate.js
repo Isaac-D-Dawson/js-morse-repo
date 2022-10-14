@@ -26,6 +26,12 @@ export const translateToMorse = (engString, morseObj=morseObject, filter="", joi
     return cleanArr.join(joiner)
 }
 
+/**
+ * Takes anobject and returns a reversed object, where all keys and pairs have been exchanged.
+ * may behave weirdly if there are multiple keys for one value.
+ * @param {Object} revObj 
+ * @returns Object
+ */
 const reverseObj = (revObj) => {
     const results = {};
     [...Object.keys(revObj)].forEach((key) => {
