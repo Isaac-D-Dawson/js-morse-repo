@@ -1,0 +1,19 @@
+PLANS FOR MORE TRANSLATIONS FUNCTION
+
+-Function will take a string input.
+-String will be broken down into an array of single chars.
+-each individual char will be lowercased.
+-Each lowercased char will be mapped to a morse-code object.
+--Unrecognised chars will be ignored.
+-Array of morse chars will be filtered to clear ignored chars.
+-array of morse char replacements will then be joined as a string.
+-Final string will be returned.
+
+EXTENSION:
+-Create DOM-facing file that handles user interaction with function.
+
+FURTHER PLANS:
+
+-Add additional checks for valid numbers and punctuation.
+
+-Add easter Eggs ("The Angels have the Phonebox" script).
