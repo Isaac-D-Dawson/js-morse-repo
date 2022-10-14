@@ -50,7 +50,7 @@ describe("translateToMorse", () => {
     //Longer string testing
     it("Should be able to handle proper sentences", () => {
         const testInput = "Read Books";
-        const testMorse ="*-* * *- -** / -*** --- --- -*-";
+        const testMorse ="*-* * *- -** / -*** --- --- -*- ***";
 
         const result = translateToMorse(testInput);
 
@@ -68,7 +68,7 @@ describe("translateToMorse", () => {
     })
 
     it("Should ignore invalid/unreconised chars", () => {
-        const testInput = "820193..;:@/";
+        const testInput = "820193;:@/";
         const testMorse ="";
         //I'll need to update that test string as I add more functionality
         //Morse has compatability with numbers and basic punctuation, but-
