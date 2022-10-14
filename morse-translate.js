@@ -1,5 +1,3 @@
-import { join } from "path";
-
 export const morseObject = {
     "a" : "*-",     "b" : "-***",   "c" : "-*-*",
     "d" : "-**",    "e" : "*",      "f" : "**-*",
