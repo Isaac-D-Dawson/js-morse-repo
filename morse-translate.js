@@ -1,5 +1,5 @@
 
-const morseObject = {
+export const morseObject = {
     "a" : "*-",     "b" : "-***",   "c" : "-*-*",
     "d" : "-**",    "e" : "*",      "f" : "**-*",
     "g" : "--*",    "h" : "****",   "i" : "**",
@@ -20,7 +20,7 @@ const morseObject = {
  * @param {Object} morseObj 
  * @returns String
  */
-const translateToMorse = (engString, morseObj=morseObject) => {
+export const translateToMorse = (engString, morseObj=morseObject) => {
     const lowerArr = engString.split("").map((char) => char.toLowerCase());
     const mappedArr = lowerArr.map((char) => morseObj[char] ?? "");
     const cleanArr = mappedArr.filter((item) => item !== "");

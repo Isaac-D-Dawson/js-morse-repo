@@ -1,4 +1,4 @@
-
+import {morseObject, translateToMorse} from "./morse-translate"
 
 describe("translateToMorse", () => {
     it("Should return a valid morse string for a provided english string", () => {
