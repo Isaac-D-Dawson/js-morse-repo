@@ -1,0 +1,26 @@
+{
+  "name": "js-morse-repo",
+  "version": "1.0.0",
+  "description": "Hello!",
+  "main": "app-index.js",
+  "scripts": {
+    "test:jest": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isaac-D-Dawson/js-morse-repo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Isaac-D-Dawson/js-morse-repo/issues"
+  },
+  "homepage": "https://github.com/Isaac-D-Dawson/js-morse-repo#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "babel-jest": "^29.1.2",
+    "jes": "^0.6.1"
+  }
+}
