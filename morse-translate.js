@@ -1,3 +1,5 @@
+import { easterEggs } from "./EasterEggs.js";
+
 export const morseObject = {
     "a" : "*-",     "b" : "-***",   "c" : "-*-*",
     "d" : "-**",    "e" : "*",      "f" : "**-*",
@@ -20,6 +22,7 @@ export const morseObject = {
  * @returns String
  */
 export const translateToMorse = (engString, morseObj=morseObject, filter="", joiner=" ") => {
+    if (Object.keys(easterEggs).includes(engString)) {return translateToMorse(easterEggs[engString])};
     const lowerArr = engString.split(filter).map((char) => char.toLowerCase());
     const mappedArr = lowerArr.map((char) => morseObj[char] ?? "");
     const cleanArr = mappedArr.filter((item) => item !== "");
